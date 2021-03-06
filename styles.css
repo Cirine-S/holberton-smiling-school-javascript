@@ -1,0 +1,415 @@
+.bg {
+	background-image: url('images/pic_1.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 0 0 0 0;
+  }
+  
+  
+  .pricing {
+	background-image: url('images/pic_2.jpg');
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding: 0 0 0 0;
+  }
+  
+  .courses {
+	background-image: url('images/pic_3.jpg');
+	background-position:center;
+	background-repeat: no-repeat;
+	background-size:cover;
+	padding: 0 0 0 0;
+  }
+  
+  section {
+	padding: 80px 0 80px 0;
+  }
+  
+  .dark-theme-complete {
+	background-color: black;
+  }
+  
+  .purple_theme {
+	color: white !important;
+	background-color: #c271ff;
+  }
+  
+  .schooled {
+	font-family: 'Source Sans Pro';
+	padding: 168px 0 0 0;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 120px;
+	line-height: 151px;
+	top: calc(50% - 151px/2 - 251px);
+	color: #FFFFFF;
+  }
+  
+  .whatis {
+	  padding: 7rem 0 7rem 0;
+  }
+  
+  .learn {
+	padding: 168px 0 0 0;
+  }
+  
+  @media (min-width: 320px) and (max-width: 576px) {
+	.schooled {
+	  font-size: 3.5rem;
+	  font-weight: 200;
+	}
+  }
+  
+  @media (min-width: 320px) and (max-width: 576px) {
+	h1, h2,.register {
+	  font-size: 0.9rem;
+	}
+  }
+  
+  .navbar-brand {
+	margin: auto;
+  }
+  
+  .register {
+	background: #C271FF;
+	border-radius: 22px;
+	border-color: #C271FF;
+	filter: drop-shadow(0px 2px 20px rgba(0, 0, 0, 0.5));
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 18px;
+	}
+  
+	.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+		background-color: rgb(127, 75, 167);
+		border-color: #C271FF;
+	}
+  
+  .register:hover, .register:focus, .register:active, .register:checked {
+	  background-color: rgb(216, 166, 255);
+	border-color: transparent;
+	opacity: 0.9;
+  }
+  
+  
+  .learntext {
+	color: #c271ff;
+	height: 40px;
+	left: 41.94%;
+	right: 39.93%;
+	top: calc(50% - 40px/2 + 104.5px);
+	font-family: 'Source Sans Pro';
+	font-style: normal;
+	font-weight: bold;
+	font-size: 32px;
+	line-height: 40px;
+	text-align: center;
+  }
+  
+  .navpurple{
+	  color: #c271ff;
+  }
+  
+  .card {
+	background-color: transparent;
+	border: transparent;
+  }
+  
+  .card-body {
+	  padding: 0;
+  }
+  
+  
+  .purple-color {
+	background-color: #C271FF;
+  }
+  
+  
+  .carousel-control-next-icon {
+	  background-image: url("images/arrow_white_right.png");
+	  width: 20%;
+	  height: 25%;
+	  }
+  
+  .carousel-control-prev-icon {
+	  background-image: url("images/arrow_white_left.png");
+	  width: 20%;
+	  height: 25%;
+  }
+  
+  
+  .popularvideos .carousel-control-prev-icon {
+	  background-image: url('images/arrow_black_left.png');
+  }
+  
+  .popularvideos .carousel-control-next-icon {
+	  background-image: url('images/arrow_black_right.png');
+  }
+  
+  .play {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+  
+  }
+  .play:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	background: transparent url("./images/play.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: 30%;
+  }
+  
+  .carousel-inner {
+	  padding: 0 10% 0 10%;
+  }
+  .carousel-item {
+	min-height: 240px;
+  }
+  
+  @media (min-width: 768px) and (max-width: 991px) {
+	/* Show 4th slide on md if col-md-4*/
+	.popularvideos .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+		position: absolute;
+		top: 0;
+		right: -33.3333%;  /*change this with javascript in the future*/
+		z-index: -1;
+		display: block;
+		visibility: visible;
+	}
+  }
+  @media (min-width: 576px) and (max-width: 768px) {
+	/* Show 3rd slide on sm if col-sm-6*/
+	.popularvideos .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+		position: absolute;
+		top: 0;
+		right: -50%;  /*change this with javascript in the future*/
+		z-index: -1;
+		display: block;
+		visibility: visible;
+	}
+  }
+  @media (min-width: 576px) {
+	.popularvideos .carousel-item {
+		margin-right: 0;
+	}
+	/* show 2 items */
+	.popularvideos .carousel-inner .active + .carousel-item {
+		display: block;
+	}
+	.popularvideos .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+	.carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+		transition: none;
+	}
+	.popularvideos .carousel-inner .carousel-item-next {
+		position: relative;
+		transform: translate3d(0, 0, 0);
+	}
+	/* left or forward direction */
+	.popularvideos .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+	.carousel-item-next.carousel-item-left + .carousel-item,
+	.carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+		position: relative;
+		transform: translate3d(-100%, 0, 0);
+		visibility: visible;
+	}
+	/* farthest right hidden item must be also positioned for animations */
+	.popularvideos .carousel-inner .carousel-item-prev.carousel-item-right {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		display: block;
+		visibility: visible;
+	}
+	/* right or prev direction */
+	.popularvideos .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+	.carousel-item-prev.carousel-item-right + .carousel-item,
+	.carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+		position: relative;
+		transform: translate3d(100%, 0, 0);
+		visibility: visible;
+		display: block;
+		visibility: visible;
+	}
+  }
+  /* MD */
+  @media (min-width: 768px) {
+	/* show 3rd of 3 item slide */
+	.popularvideos .carousel-inner .active + .carousel-item + .carousel-item {
+		display: block;
+	}
+	.popularvideos .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+		transition: none;
+	}
+	.popularvideos .carousel-inner .carousel-item-next {
+		position: relative;
+		transform: translate3d(0, 0, 0);
+	}
+	/* left or forward direction */
+	.popularvideos .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+		position: relative;
+		transform: translate3d(-100%, 0, 0);
+		visibility: visible;
+	}
+	/* right or prev direction */
+	.popularvideos .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+		position: relative;
+		transform: translate3d(100%, 0, 0);
+		visibility: visible;
+		display: block;
+		visibility: visible;
+	}
+  }
+  /* LG */
+  @media (min-width: 991px) {
+	/* show 4th item */
+	.popularvideos .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+		display: block;
+	}
+	.popularvideos .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+		transition: none;
+	}
+	/* Show 5th slide on lg if col-lg-3 */
+	.popularvideos .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+		position: absolute;
+		top: 0;
+		right: -25%;  /*change this with javascript in the future*/
+		z-index: -1;
+		display: block;
+		visibility: visible;
+	}
+	/* left or forward direction */
+	.popularvideos .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+		position: relative;
+		transform: translate3d(-100%, 0, 0);
+		visibility: visible;
+	}
+	/* right or prev direction //t - previous slide direction last item animation fix */
+	.popularvideos .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+		position: relative;
+		transform: translate3d(100%, 0, 0);
+		visibility: visible;
+		display: block;
+		visibility: visible;
+	}
+  }
+  
+  
+  .social-link {
+	margin: 0 15px 0 15px;
+  }
+  
+  .footer .list-inline li {
+	display:inline;
+  
+  }
+  .social-links-div {
+	text-align: right;
+  }
+  .social-link > svg {
+	fill: white;
+  }
+  
+  @media (min-width: 200px) and (max-width: 575px) {
+  
+	.footer .brand {
+	  text-align: center !important;
+	}
+	.footer .social {
+	  text-align: center !important;
+	}
+  
+  }
+  
+  /*.table, td, th {
+	border-bottom: 1px solid gray;
+  }
+  .table, tr:last-child td {
+	border-bottom: 1px solid transparent;
+  }
+  .table, td, th {
+	border-bottom: 1px solid gray;
+  }
+  .table, tr:last-child td {
+	border-bottom: 1px solid transparent;
+  }
+  .table thead th {
+	border-bottom: 2px solid transparent;
+  }
+  .table td, .table th {
+	border-top: 1px solid transparent;
+  }
+  .table {
+	max-width: 80px;
+  }
+  */
+  
+  .cooper_title {
+	font-family: "Cooper Black";
+	margin: 0;
+  }
+  
+  .filter_section {
+	padding: 40px 0 40px 0;
+  }
+  .form-control {
+	  color: var(--text-white-transparent);
+	  background-color: #ffffff54;
+	  border: transparent;
+	border-radius: 5px 5px 0 0;
+	border-bottom: 2px solid var(--text-color-dark);
+	height: 50px;
+	position: relative;
+  }
+  .form-control::placeholder {
+	  color: var(--text-white-transparent);
+	  opacity: 1;
+  }
+  .filter_section label {
+	  margin-bottom: .2rem;
+  }
+  
+  select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;       /* Remove default arrow */
+	/*background-image: url(./images/star_off.png);  */ /* Add custom arrow */
+  }
+  
+  .icon_select {
+	  position: absolute;
+	  right: 30px;
+	  z-index: 10;
+	  bottom: 17px;
+  }
+  
+  .icon_search {
+	position: absolute;
+	  left: 30px;
+	  z-index: 10;
+	  bottom: 17px;
+  }
+
+  .loader {
+    border: 10px solid #f3f3f3;
+    border-top: 10px solid #C271FF;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+	}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}
