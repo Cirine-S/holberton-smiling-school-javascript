@@ -1,428 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="icon" type="image/png" href="images/favicon.ico">
-    <!-- Holberton resources Begin -->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- Holberton resources End -->
-	<link rel="stylesheet" href="styles.css">
-	<script src="scripts.js"></script>
-    <title>Courses - Smile School</title>
-</head>
-    <body>
-        <div class="banner_courses container-fluid">
-            <header class="container d-flex justify-content-between pt-4 flex-sm-row flex-column">
-                
-                <h1 class="mt-0 d-flex col-xl-9 col-md-7 col-sm-6 col-12 align-items-center justify-content-center justify-content-sm-start flex-sm-row flex-column">
-                    <a href="#" class="logoSmile mr-3">Smile</a>
-                    <a href="#" class="logo mt-sm-0 mt-3">SmileSchool</a>
-                </h1>
-    
-                <span class="iconMenu float-left position-absolute d-sm-none" data-toggle="collapse" href="#collapseMenu" role="button" aria-expanded="false" aria-controls="collapseMenu"></span>
-    
-                <nav class="nav text-white col-xl-3 col-sm-6 col-12 col-md-5 d-sm-flex collapse px-0" id="collapseMenu">
-                    <ul class="d-flex justify-content-sm-between align-items-center px-0 w-100 flex-column flex-sm-row">
-                        <li class="nav-link"><a href="#">COURSES</a></li>
-                        <li class="nav-link"><a href="#">PRICING</a></li>
-                        <li class="nav-link"><a href="#">LOGIN</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="text-center pb-5">
-                <h1 class="font-smileschool text-white d-none d-sm-block">« Don’t cry because it’s over.<br><span class="featuredTxt">Smile</span> because it happened. »</h1>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0, viewport-fit=cover">
+        <meta name="description" content="Project built with Bootstrap for Holberton School">
+		<title>Smile School - Homepage</title>
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <!-- Google Fonts-->
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+          rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="images/favicon.png" rel="icon" type="image/png" />
+        <link href="stylex.css" rel="stylesheet" type="text/css" />
+        <link href="font-style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="CourseStyle.css">
+		<link rel="stylesheet" href="stylexx.css">
+		<link rel="stylesheet" href="styles.css">
+		
+		<script src="scripts.js"></script>
+
+
+
+      </head>
+      <body>
+        <header class="courses__header">
+          <div class="container">
+            <div class="d-flex justify-content-between pt-4 flex-sm-row flex-column">
+              <!-- Logo -->
+              <div class="d-flex align-items-center justify-content-sm-start justify-content-center flex-sm-row flex-column">
+                <a href="#" class="logo__smile mr-sm-3">Smile</a>
+                <a href="#" class="logo mt-sm-0 mt-3">SmileSchool</a>
+              </div>
+              <!--navlist-->
+              <span href="#navigationbar" class="holberton_school-icon-menu position-absolute d-sm-none" data-toggle="collapse" role="button" aria-expanded="false" aria-controls="navigationbar"></span>
+              <!-- Navigation -->
+              <!--ROW for the navlist 50% for w > sm , break-->
+              <div class="row w-50 mx-auto mx-sm-0 mr-sm-3">
+              <nav class="nav text-white col-xl-12 col-sm-6 text-center col-12 col-md-5 d-sm-flex collapse px-0" id="navigationbar">
+                <ul class="col-12 d-flex justify-content-sm-end align-items-center p-0 m-0 flex-column flex-sm-row font-weight-bold">
+                  <li class="ml-3 nav-link"><a href="#">COURSES</a></li>
+                  <li class="ml-3 nav-link"><a href="pricing.html">PRICING</a></li>
+                  <li class="ml-3 nav-link"><a href="#">LOGIN</a></li>
+                </ul>
+              </nav>
             </div>
+            <!--end nav-->
+
+            </div>
+
+            <div class="col-6 mx-auto text-center mt-4 courses__header-slogan">
+                <p>« Don’t cry because it’s over.
+                   <span class="smile-word">Smile</span> because it happened. »</p>
+            </div>
+
+
+          
+        </div>
+      
+      </div>
+    </header>
+
+    <main>
+       <!-- Courses  -->
+      <section class="courses__section text-white pt-4 pb-3">
+        <div class="container">
+          <form class="row">
+            <div class="col col-lg-4 col-md-12 col-sm-12 col-12">
+              <div class="form-group">
+                <label for="keywords" class="font-weight-bold">KEYWORDS</label>
+                <div class="input__container d-flex align-items-center p-2">
+                  <i class="holberton_school-icon-search" aria-hidden="true"></i>
+                  <input class="text-white font-weight-light border-0 bg-transparent w-100 p-1" type="search" id="keywords" placeholder="Search by keywords" aria-describedby="keywords">
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="form-group">
+                <label for="dropdownTopic" class="font-weight-bold">TOPIC</label>
+                <div class="dropdown">
+				  <select class ="btn w-100 dropdown-toggle font-weight-light p-2" id="dropdownTopic"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<option class="dropdown-item" value="All">All</option>
+					<option class="dropdown-item" value="Novice">Novice</option>
+					<option class="dropdown-item" value="Intermediate">Intermediate</option>
+					<option class="dropdown-item" value="Expert">Expert</option>
+				  </select>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-lg-4 col-md-6 col-sm-12 col-12">
+              <div class="form-group">
+                <label for="dropdownSort" class="font-weight-bold">SORT BY</label>
+                <div class="dropdown">
+					<select class ="btn w-100 dropdown-toggle font-weight-light p-2" id="dropdownSort"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					  <option class="dropdown-item" value="most_popular">Most Popular</option>
+					  <option class="dropdown-item" value="most_recent">Most Recent</option>
+					  <option class="dropdown-item" value="most_viewed">Most Viewed</option>
+					</select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+
+
+        </div>
+      </section>
+    
+       <!-- Card -->
+       <section class="courses__results py-5">
+        <div class="container">
+          <div class="row pb-4">
+            <p class="col text-muted text-results">11 videos</p>
+          </div>
+          <div class="row" id="rowVideos">
+			  		  <div class ="loader"></div>
+		  </div>
+        </div>
+      </section>
+
+</main>
+<footer class="footerx">
+    <div class="container footerx__data">
+      <div class="row help  pt-5">
+
+        <div class="col-sm-10 text-sm-left mb-sm-0 mb-5 text-center footerx__logo-box">
+         <img class="footer__lo" src="./images/smile_off.png" alt="">
+         <img class="footer__go" src="./images/logo.svg" alt="">
         </div>
 
-        <main>
-            <section class="backPageColor">
-                <div class="container">
-                    <!--FORM-->
-                    <form class="py-5 row">
+        <div class="col-sm-2 col-4 d-flex  justify-content-between mx-auto justify-content-sm-between footerx__social">
+          <img src="./images/Facebook_White.png" alt="">
+          <img src="./images/Twitter_White.png" alt="">
+          <img src="./images/Instagram_White.png" alt="">
+        </div>
+      </div>
+    </div>
 
-                        <!--SEARCH-->
-                        <div class="form-group col-12 col-md-4">
-                            <label for="keywords" class="text-uppercase font-weight-bold text-white">Keywords</label>
-                            <div class="d-flex align-items-center mix-blend-normal py-1 px-2 bg-smile-input rounded-top borderB">
-                                <i class="iconSearch" aria-hidden="true"></i>
-                                <input type="text" class="form-control bg-transparent border-top-0 border-right-0 border-left-0 text-white place-holder" id="keywords" aria-describedby="keywords" placeholder="Search by keywords">
-                            </div>
-                        </div>
-    
-                        <!--Select Box 1-->
-                        <div class="form-group col-12 col-sm-6 col-md-4">
-                            <label for="topic" class="text-uppercase font-weight-bold text-white">TOPIC</label>
-                            <div class="d-flex align-items-center mix-blend-normal py-1 px-2 bg-smile-input rounded-top borderB">
-                                <span id="topic" class="form-control bg-transparent border-0 text-start text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Novice</span>
-                                <span class="dropdown-toggle text-white"></span>
-                                <div class="dropdown-menu col-10">
-                                    <a class="dropdown-item">Novice</a>
-                                    <a class="dropdown-item">Novice</a>
-                                    <a class="dropdown-item">Novice</a>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <!--Select Box 2-->
-                        <div class="form-group col-12 col-sm-6 col-md-4">
-                            <label for="sort" class="text-uppercase font-weight-bold text-white">SORT BY</label>
-                            <div class="d-flex align-items-center mix-blend-normal py-1 px-2 bg-smile-input rounded-top borderB">
-                                <span id="sort" class="form-control bg-transparent border-0 text-start text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Most popular</span>
-                                <span class="dropdown-toggle text-white"></span>
-                                <div class="dropdown-menu col-10">
-                                    <a class="dropdown-item">Most popular</a>
-                                    <a class="dropdown-item">Most popular</a>
-                                    <a class="dropdown-item">Most popular</a>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </section>
-            <section>
-                <p class="mt-5 mx-5 opt">11 videos</p>
-
-                <div class="mx-5 row pt-5">
-
-                    <!--CAROUSEL 1 ITEM-->
-                    <div class="card col-md-3 col-sm-4 col-12" style="width: 16rem;">
-                        <div class=" d-flex align-items-center justify-content-center">
-                            <img src="images/thumbnail_4.jpg" alt="" class="card-img-top" />
-                            <img src="images/play.png" alt="" class="position-absolute iconPlay" />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold text-left">Diagonal Smile</h5>
-                            <p class="card-text text-muted text-left">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                            <div class="d-flex align-items-center">
-                                <div class="mr-3">
-                                    <img src="images/profile_1.jpg" alt="" class="img_user rounded-circle">
-                                </div>
-                                <div class="card_user featuredTxt">
-                                    Phillip Massey
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between mt-3 align-items-center">
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_off.png" alt="" class="star" />
-                                <div class="featuredTxt ctime">8 min</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--CAROUSEL 2 ITEM-->
-                    <div class="card col-md-3 col-sm-4 col-12" style="width: 16rem;">
-                        <div class=" d-flex align-items-center justify-content-center">
-                            <img src="images/thumbnail_3.jpg" alt="" class="card-img-top" />
-                            <img src="images/play.png" alt="" class="position-absolute iconPlay" />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold text-left">Sad Smile</h5>
-                            <p class="card-text text-muted text-left">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                            <div class="d-flex align-items-center">
-                                <div class="mr-3">
-                                    <img src="images/profile_1.jpg" alt="" class="img_user rounded-circle">
-                                </div>
-                                <div class="card_user featuredTxt">
-                                    Phillip Massey
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between mt-3 align-items-center">
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_off.png" alt="" class="star" />
-                                <div class="featuredTxt ctime">8 min</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--CAROUSEL 3 ITEM-->
-                    <div class="card col-md-3 col-sm-4 col-12" style="width: 16rem;">
-                        <div class=" d-flex align-items-center justify-content-center">
-                            <img src="images/thumbnail_1.jpg" alt="" class="card-img-top" />
-                            <img src="images/play.png" alt="" class="position-absolute iconPlay" />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold text-left">Natural Smile</h5>
-                            <p class="card-text text-muted text-left">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                            <div class="d-flex align-items-center">
-                                <div class="mr-3">
-                                    <img src="images/profile_1.jpg" alt="" class="img_user rounded-circle">
-                                </div>
-                                <div class="card_user featuredTxt">
-                                    Phillip Massey
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between mt-3 align-items-center">
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_off.png" alt="" class="star" />
-                                <div class="featuredTxt ctime">8 min</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--CAROUSEL 4 ITEM-->
-                    <div class="card col-md-3 col-sm-4 col-12" style="width: 16rem;">
-                        <div class=" d-flex align-items-center justify-content-center">
-                            <img src="images/thumbnail_2.jpg" alt="" class="card-img-top" />
-                            <img src="images/play.png" alt="" class="position-absolute iconPlay" />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold text-left">Happy Smile</h5>
-                            <p class="card-text text-muted text-left">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                            <div class="d-flex align-items-center">
-                                <div class="mr-3">
-                                    <img src="images/profile_1.jpg" alt="" class="img_user rounded-circle">
-                                </div>
-                                <div class="card_user featuredTxt">
-                                    Phillip Massey
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between mt-3 align-items-center">
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_off.png" alt="" class="star" />
-                                <div class="featuredTxt ctime">8 min</div>
-                            </div>
-                        </div>
-                    </div>
+    <div class="copyrights text-center pt-5">
+      <p>©smileschool 2020</p>
+    </div>
+  </footer>
+          
+          
+       
 
 
-                    <!--CAROUSEL 5 ITEM-->
-                    <div class="card col-md-3 col-sm-4 col-12" style="width: 16rem;">
-                        <div class=" d-flex align-items-center justify-content-center">
-                            <img src="images/thumbnail_4.jpg" alt="" class="card-img-top" />
-                            <img src="images/play.png" alt="" class="position-absolute iconPlay" />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold text-left">Diagonal Smile</h5>
-                            <p class="card-text text-muted text-left">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                            <div class="d-flex align-items-center">
-                                <div class="mr-3">
-                                    <img src="images/profile_1.jpg" alt="" class="img_user rounded-circle">
-                                </div>
-                                <div class="card_user featuredTxt">
-                                    Phillip Massey
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between mt-3 align-items-center">
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_off.png" alt="" class="star" />
-                                <div class="featuredTxt ctime">8 min</div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!--CAROUSEL 6 ITEM-->
-                    <div class="card col-md-3 col-sm-4 col-12" style="width: 16rem;">
-                        <div class=" d-flex align-items-center justify-content-center">
-                            <img src="images/thumbnail_3.jpg" alt="" class="card-img-top" />
-                            <img src="images/play.png" alt="" class="position-absolute iconPlay" />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold text-left">Sad Smile</h5>
-                            <p class="card-text text-muted text-left">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                            <div class="d-flex align-items-center">
-                                <div class="mr-3">
-                                    <img src="images/profile_1.jpg" alt="" class="img_user rounded-circle">
-                                </div>
-                                <div class="card_user featuredTxt">
-                                    Phillip Massey
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between mt-3 align-items-center">
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_off.png" alt="" class="star" />
-                                <div class="featuredTxt ctime">8 min</div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!--CAROUSEL 7 ITEM-->
-                    <div class="card col-md-3 col-sm-4 col-12" style="width: 16rem;">
-                        <div class=" d-flex align-items-center justify-content-center">
-                            <img src="images/thumbnail_1.jpg" alt="" class="card-img-top" />
-                            <img src="images/play.png" alt="" class="position-absolute iconPlay" />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold text-left">Natural Smile</h5>
-                            <p class="card-text text-muted text-left">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                            <div class="d-flex align-items-center">
-                                <div class="mr-3">
-                                    <img src="images/profile_1.jpg" alt="" class="img_user rounded-circle">
-                                </div>
-                                <div class="card_user featuredTxt">
-                                    Phillip Massey
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between mt-3 align-items-center">
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_off.png" alt="" class="star" />
-                                <div class="featuredTxt ctime">8 min</div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!--CAROUSEL 8 ITEM-->
-                    <div class="card col-md-3 col-sm-4 col-12" style="width: 16rem;">
-                        <div class=" d-flex align-items-center justify-content-center">
-                            <img src="images/thumbnail_2.jpg" alt="" class="card-img-top" />
-                            <img src="images/play.png" alt="" class="position-absolute iconPlay" />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold text-left">Happy Smile</h5>
-                            <p class="card-text text-muted text-left">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                            <div class="d-flex align-items-center">
-                                <div class="mr-3">
-                                    <img src="images/profile_1.jpg" alt="" class="img_user rounded-circle">
-                                </div>
-                                <div class="card_user featuredTxt">
-                                    Phillip Massey
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between mt-3 align-items-center">
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_off.png" alt="" class="star" />
-                                <div class="featuredTxt ctime">8 min</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--CAROUSEL 9 ITEM-->
-                    <div class="card col-md-3 col-sm-4 col-12" style="width: 16rem;">
-                        <div class=" d-flex align-items-center justify-content-center">
-                            <img src="images/thumbnail_4.jpg" alt="" class="card-img-top" />
-                            <img src="images/play.png" alt="" class="position-absolute iconPlay" />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold text-left">Diagonal Smile</h5>
-                            <p class="card-text text-muted text-left">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                            <div class="d-flex align-items-center">
-                                <div class="mr-3">
-                                    <img src="images/profile_1.jpg" alt="" class="img_user rounded-circle">
-                                </div>
-                                <div class="card_user featuredTxt">
-                                    Phillip Massey
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between mt-3 align-items-center">
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_off.png" alt="" class="star" />
-                                <div class="featuredTxt ctime">8 min</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--CAROUSEL 10 ITEM-->
-                    <div class="card col-md-3 col-sm-4 col-12" style="width: 16rem;">
-                        <div class=" d-flex align-items-center justify-content-center">
-                            <img src="images/thumbnail_3.jpg" alt="" class="card-img-top" />
-                            <img src="images/play.png" alt="" class="position-absolute iconPlay" />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold text-left">Sad Smile</h5>
-                            <p class="card-text text-muted text-left">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                            <div class="d-flex align-items-center">
-                                <div class="mr-3">
-                                    <img src="images/profile_1.jpg" alt="" class="img_user rounded-circle">
-                                </div>
-                                <div class="card_user featuredTxt">
-                                    Phillip Massey
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between mt-3 align-items-center">
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_off.png" alt="" class="star" />
-                                <div class="featuredTxt ctime">8 min</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--CAROUSEL 11 ITEM-->
-                    <div class="card col-md-3 col-sm-4 col-12" style="width: 16rem;">
-                        <div class=" d-flex align-items-center justify-content-center">
-                            <img src="images/thumbnail_1.jpg" alt="" class="card-img-top" />
-                            <img src="images/play.png" alt="" class="position-absolute iconPlay" />
-                        </div>
-                        <div class="card-body">
-                            <h5 class="card-title font-weight-bold text-left">Natural Smile</h5>
-                            <p class="card-text text-muted text-left">Lorem ipsum dolor sit amet, consect adipiscing elit, sed do eiusmod.</p>
-                            <div class="d-flex align-items-center">
-                                <div class="mr-3">
-                                    <img src="images/profile_1.jpg" alt="" class="img_user rounded-circle">
-                                </div>
-                                <div class="card_user featuredTxt">
-                                    Phillip Massey
-                                </div>
-                            </div>
-                            <div class="d-flex justify-content-between mt-3 align-items-center">
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_on.png" alt="" class="star" />
-                                <img src="images/star_off.png" alt="" class="star" />
-                                <div class="featuredTxt ctime">8 min</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="backPageColor2 pt-5">
-            <div class="bg-smile-dark py-sm-5 text-white d-flex justify-content-md-around justify-content-sm-between align-items-center flex-sm-row flex-column">
-                <!--LOGO-->
-                <div>
-                    <a href="#" class="col-12 col-sm-1 pr-2">
-                        <img src="images/smile_off.png" alt="Logo" width="30" height="30">
-                    </a>
-                    <a href="#" class="col-12 col-sm-1 pl-0">
-                        <img src="images/logo.png" alt="Logo" width="110" height="30">
-                    </a>
-                </div>
-                <!--SOCIAL MEDIA-->
-                <div class="pr-sm-3 pr-md-0 mt-sm-0 mt-5">
-                    <i class="iconMenu-facebook mr-1 pointer"></i>
-                    <i class="iconMenu-twitter mx-1 pointer"></i>
-                    <i class="iconMenu-instagram ml-1 pointer"></i>
-                </div>
-            </div>
-            <!--COPY RIGHT-->
-            <div class="bg-smile-dark d-flex justify-content-center pt-5 pt-sm-0 pb-1">
-                <p class="font-weight-normal text-white mix-blend">©smileschool 2020</p>
-            </div>
-        </footer>
-    </body>
+</body>
 </html>

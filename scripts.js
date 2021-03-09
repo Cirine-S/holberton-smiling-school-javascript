@@ -1,5 +1,8 @@
 $(document).ready(function(){
 
+
+
+
 	function CarouselComponent(active, name, image, quote, title){
 		return (`<div class="carousel-item ${active}">
 						<div class="row d-flex justify-content-center">
@@ -18,7 +21,7 @@ $(document).ready(function(){
 
 	function CarouselPopTuto(active, title, subtitle, thumb_url, author, author_pic_url, star, duration, topic, views, published_at){
 		let starImg = "<img class='img-fluid' src= './images/star_on.png'/>"
-		return (`<div class="carousel-item col-12 col-sm-6 col-md-4 col-lg-3 ${active}">
+		return (`<div class="col-12 col-sm-6 col-md-4 col-lg-3 ${active}">
 					<div class="card">
 						<div class="card-body">
 							<div class="">
@@ -59,25 +62,52 @@ $(document).ready(function(){
 	function readyFn(func, url, parentCarouselinner) {
 	
 		$.getJSON(url, function(data){
-			$(`${parentCarouselinner} .carousel-inner`).hide()
+			$(`${parentCarouselinner}`).hide()
 			for(let i = 0; i < data.length; i++)
 			{
 				let item = ""
 				let active = ""
-				if (i == 0)
-					active = "active"
-				
-				if (parentCarouselinner == "#carouselExampleControls")
-					item = func(active, data[i].name, data[i].pic_url, data[i].text, data[i].title)
-				else 
-					item = func(active, data[i].title, data[i]["sub-title"], data[i].thumb_url, data[i].author, data[i].author_pic_url, data[i].star, data[i].duration, data[i].topic, data[i].views, data[i].published_at)
 
-				$(`${parentCarouselinner} .carousel-inner`).append(item)
+				
+				item = func(active, data[i].title, data[i]["sub-title"], data[i].thumb_url, data[i].author, data[i].author_pic_url, data[i].star, data[i].duration, data[i].topic, data[i].views, data[i].published_at)
+
+				$(`${parentCarouselinner}`).append(item)
 				$(".loader").hide()
 			}
 			$(`${parentCarouselinner} .carousel-inner`).show()
 		});
 	}
+
+	function CoursesVideos(func, url, parentCarouselinner) {
+
+		$(`${parentCarouselinner} .loader`).hide()
+		let topic = $('#dropdownTopic option:selected').val()
+		let sort = $('#dropdownSort option:selected').val()
+		let q = $('#keywords').text()
+		$.get( url, {q : q, topic : topic, sort: sort} )
+			.done(function( data ) {
+				if ($(`${parentCarouselinner}`).children().length > 0) {
+					$(`${parentCarouselinner}`).empty();
+				  }
+				for(let i = 0; i < data.courses.length; i++)
+				{
+					let item = ""
+					let active = "active"
+					
+					item = func(active, data.courses[i].title, data.courses[i]["sub-title"], data.courses[i].thumb_url, data.courses[i].author, data.courses[i].author_pic_url, data.courses[i].star, data.courses[i].duration, data.courses[i].topic, data.courses[i].views, data.courses[i].published_at)
+
+
+					$(`${parentCarouselinner}`).append(item)
+					$(`${parentCarouselinner}`).show()
+					$(".loader").hide()
+				}
+
+			})
+
+	}
+
+	$("#dropdownTopic").change(() => CoursesVideos(CarouselPopTuto, "https://smileschool-api.hbtn.info/courses", "#rowVideos"))
+	$("#dropdownSort").change(() => CoursesVideos(CarouselPopTuto, "https://smileschool-api.hbtn.info/courses", "#rowVideos"))
 
 	readyFn(CarouselComponent, "https://smileschool-api.hbtn.info/quotes", "#carouselExampleControls")
 	readyFn(CarouselPopTuto, "https://smileschool-api.hbtn.info/popular-tutorials", "#multi-item-example")

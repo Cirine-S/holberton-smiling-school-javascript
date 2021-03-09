@@ -1,0 +1,309 @@
+:root {
+    --color-purple: #c271ff;
+    --color-dark-blue: #071629;
+    --container-large-desktop: 1300px;
+    --color-black:rgba(7, 22, 41, 1);
+    --color-purple-secondary: #d194ff;
+
+  }
+
+  .bg-default {
+    background-color: var(--color-dark-blue);
+  }
+  body {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: rgba(255, 255, 255, 1);
+
+  }
+  .btn-primary {
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 50px !important;
+    border: 0;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .btn-primary,
+  .btn-primary:active {
+    background-color: var(--color-purple) !important;
+  } 
+
+.courses__header {
+    background-image: url(/images/pic_3.jpg);
+    background-size: cover;
+    background-color:var(--color-dark-blue);
+    background-position:center;
+    background-repeat: no-repeat;
+    min-height: 216px;
+    overflow: auto;
+}
+
+.courses__header-slogan {
+    font-family: 'Coiny', cursive;
+    font-size: 32px;
+    font-weight: bold !important;
+}
+
+.smile-word {
+    color:var(--color-purple);
+}
+
+
+.polegroup {
+    background-color: var(--color-purple) !important;
+}
+
+
+
+input::placeholder {
+    color:rgba(255, 255, 255, 0.767) !important;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.157) !important;
+    font-size: 23px;
+    font-weight: 400;
+    
+    margin-left:100px;
+
+    
+}
+
+
+.dropd{
+    width: 350px !important;
+    height: 51px !important;
+    position:relative;
+    
+}
+
+.ddx {
+    width: 350px !important;
+}
+
+
+.courses__section {
+    background-color: var(--color-purple);
+}
+
+
+
+.input-group-text {
+    background-color: transparent  !important;
+    border: none;
+    position:absolute;
+    top: 14px;
+}
+.courses__search .form-group label {
+    font-size: 12px;
+    line-height: 15px;
+    padding-bottom: 0.25rem;
+  }
+  
+  .input__container {
+    background-color: var(--color-purple-secondary);
+  }
+  
+ 
+  
+  .dropdown .btn {
+    background-color: var(--color-purple-secondary);
+    text-align: left;
+  }
+  
+  .input__container input::placeholder,
+  .dropdown .btn {
+    font-size: 23px;
+    line-height: 29px;
+    color: white;
+  }
+  
+  .input__container, 
+  .dropdown-toggle {
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px 4px 0 0;
+  }
+  
+  .dropdown-toggle::after {
+    position: absolute;
+    right: 20px;
+    top: 45%;
+  }
+  
+  a.dropdown-item:hover {
+    color: var(--color-purple);
+    background-color: white;
+  }
+
+  .courses__results .card {
+    border: none;
+  }
+  
+  .courses__results {
+    padding-bottom: 2rem;
+  }
+  
+  p.text-results {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  @media screen and (max-width: 1400px) {
+    .courses__header {
+      background-size: auto;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .courses__header {
+      background-position: center center;
+      padding-bottom: 2rem;
+    }
+  }
+  
+  /*** 5. FOOTER ***/
+  
+  footer {
+    height: 250px;
+  }
+  
+  .social-media__item a {
+    font-size: 32px;
+  }
+  
+  footer p {
+    color: white;
+    opacity: 0.35;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .social-media {
+      padding-top: 0.75rem;
+    }
+    footer p.copy {
+      padding-top: 1.5rem !important;
+    }
+  }
+  /*** 3. COURSES PAGE ***/
+/* Hero
+  ============================== */
+
+.courses__header {
+    background: url('images/pic_3.jpg') bottom center no-repeat;
+    background-size: cover;
+  }
+  
+  .courses h1 {
+    font-family: 'Coiny', cursive;
+    font-size: 32px;
+    line-height: 35px;
+  }
+  
+  /* Courses Search
+    ============================== */
+  
+  .courses__search .form-group label {
+    font-size: 12px;
+    line-height: 15px;
+    padding-bottom: 0.25rem;
+  }
+  
+  .input__container {
+    background-color: #d194ff;
+  }
+  
+  .holberton_school-icon-search:before {
+    padding-right: 15px;
+    font-size: 1.5rem;
+  }
+  
+  .input__container input::placeholder {
+    opacity: 0.5;
+  }
+  
+  .dropdown .btn {
+    width: 100%;
+    background-color: #d194ff;
+    text-align: left;
+  }
+  
+  .input__container input::placeholder,
+  .dropdown .btn {
+    font-size: 23px;
+    line-height: 29px;
+    color: white;
+  }
+  
+  .input__container, 
+  .dropdown-toggle {
+    position: relative;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 4px 4px 0 0;
+  }
+  
+  .dropdown-toggle::after {
+    position: absolute;
+    right: 20px;
+    top: 45%;
+  }
+  
+  a.dropdown-item:hover {
+    color: var(--color-purple);
+    background-color: white;
+  }
+  
+  /* Courses Results
+    ============================== */
+  
+  .courses__results .card {
+    border: none;
+  }
+  
+  .courses__results {
+    padding-bottom: 2rem;
+  }
+  
+  p.text-results {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  @media screen and (max-width: 1400px) {
+    .courses__header {
+      background-size: auto;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .courses__header {
+      background-position: center center;
+      padding-bottom: 2rem;
+    }
+  }
+  
+  /*** 5. FOOTER ***/
+  
+  footer {
+    height: 250px;
+  }
+  
+  .social-media__item a {
+    font-size: 32px;
+  }
+  
+  footer p {
+    color: white;
+    opacity: 0.35;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  
+  @media screen and (max-width: 576px) {
+    .social-media {
+      padding-top: 0.75rem;
+    }
+    footer p.copy {
+      padding-top: 1.5rem !important;
+    }
+  }
